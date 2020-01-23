@@ -1,0 +1,84 @@
+@import "vars";
+
+
+/* Default styles */
+html {
+    height: 100%;
+}
+
+
+
+body {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #f7f4f1;
+    font-weight: 400;
+
+    background-color: $bg-darkgrey;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+input,
+select,
+button {
+    outline: none;
+}
+
+
+
+/* Bootstrap */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+/* Normalize */
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/stats";
+@import "blocks/advantages";
+@import "blocks/news";
+@import "blocks/reviews";
+@import "blocks/footer";
+/* Vendor libs */
+@import "vendor/slick";
